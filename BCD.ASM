@@ -1,0 +1,15 @@
+.model small
+.code
+MOV AH,0
+MOV AL,A
+ADD AL,B
+AAA
+MOV A,AL
+MOV AL,AH
+ADD AL,A+1
+ADD AL,B+1
+MOV A+1,AL
+AAS
+MOV AH,76
+INT 33
+END
